@@ -156,10 +156,9 @@ main { min-height: calc(100vh - 12rem); }
 }
 .article-shell blockquote p { margin: 0; color: var(--ink); }
 .article-shell img {
-  width: min(1120px, calc(100vw - 2rem));
-  max-width: none;
-  margin: 2.25rem 50%;
-  transform: translateX(-50%);
+  width: min(760px, 100%);
+  max-width: 100%;
+  margin: 2rem auto;
   border: 1px solid var(--line);
   border-radius: 0.25rem;
   box-shadow: 0 16px 48px rgba(16, 34, 59, 0.08);
@@ -188,7 +187,7 @@ main { min-height: calc(100vh - 12rem); }
   .feature-card { grid-template-columns: 1fr; gap: 1rem; padding: 0.8rem; }
   .feature-copy { padding: 0.8rem; }
   .article-shell { padding: 3.5rem 1.2rem 5rem; }
-  .article-shell img { width: calc(100vw - 1.5rem); }
+  .article-shell img { width: 100%; }
   .site-footer { flex-direction: column; padding: 1.5rem 1.1rem; }
 }
 
