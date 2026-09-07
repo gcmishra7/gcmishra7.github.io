@@ -25,11 +25,16 @@
   <text x="472" y="468" text-anchor="middle" class="small">Policy</text>
 
   <circle cx="600" cy="402" r="54" fill="#fff" stroke="#10223b" stroke-width="4"/>
-  <path class="ink" d="M580 386h40v34h-40zM590 386v-13c0-28 20-34 32-16"/>
+  <rect class="ink" x="578" y="398" width="44" height="34" rx="5"/>
+  <path class="ink" d="M586 398v-10a14 14 0 0 1 28 0v10"/>
+  <path class="ink" d="M600 413v7"/>
+  <circle cx="600" cy="411" r="3.5" fill="#10223b"/>
   <text x="600" y="468" text-anchor="middle" class="small">Data</text>
 
   <circle cx="728" cy="402" r="54" fill="#fff" stroke="#10223b" stroke-width="4"/>
-  <path class="ink" d="M704 404c24-31 47-31 72 0M710 424h35"/>
+  <path class="ink" d="M700 414a28 28 0 0 1 56 0"/>
+  <path class="ink" d="M728 414l-15-20"/>
+  <circle cx="728" cy="414" r="4" fill="#10223b"/>
   <text x="728" y="468" text-anchor="middle" class="small">Decision</text>
 
   <!-- connectors radiating from the boundary -->
