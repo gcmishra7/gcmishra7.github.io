@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Controlled AI assisted loan workflow</title>
+  <desc id="desc">A hand drawn style loan approval flow where KYC data remains controlled, AI has a bounded role, rules are deterministic and the loan officer owns the decision.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfcfd}.boundary{fill:#f3fbfb;stroke:#007f86;stroke-width:4;stroke-dasharray:10 8}.card{fill:#fff;stroke:#10223b;stroke-width:4;stroke-linejoin:round}.line{stroke:#007f86;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none}.title{font:700 30px Georgia,serif;fill:#10223b}.head{font:800 17px Arial,sans-serif;fill:#10223b}.body{font:600 14px Arial,sans-serif;fill:#4c5f74}.tag{font:800 14px Arial,sans-serif;fill:#007f86}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0l10 5-10 5z" fill="#007f86"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="675"/>
+  <text x="70" y="75" class="title">Corporate AI sovereignty in a KYC loan decision</text>
+  <text x="72" y="110" class="body">AI prepares evidence. Approved rules and accountable people retain control.</text>
+  <rect class="boundary" x="62" y="150" width="1076" height="380" rx="24"/>
+  <text x="86" y="184" class="tag">BANK CONTROLLED BOUNDARY</text>
+  <path class="line" marker-end="url(#arrow)" d="M282 345h74"/>
+  <path class="line" marker-end="url(#arrow)" d="M530 345h74"/>
+  <path class="line" marker-end="url(#arrow)" d="M778 345h74"/>
+  <g transform="translate(100 255)">
+    <rect class="card" width="182" height="180" rx="17"/>
+    <text x="24" y="47" class="head">KYC and PII</text>
+    <text x="24" y="82" class="body">Identity</text>
+    <text x="24" y="108" class="body">Income</text>
+    <text x="24" y="134" class="body">Transactions</text>
+    <text x="24" y="161" class="tag">Authoritative source</text>
+  </g>
+  <g transform="translate(372 255)">
+    <rect class="card" width="158" height="180" rx="17"/>
+    <text x="24" y="47" class="head">AI workspace</text>
+    <text x="24" y="82" class="body">Minimised data</text>
+    <text x="24" y="108" class="body">Summaries</text>
+    <text x="24" y="134" class="body">Flags gaps</text>
+    <text x="24" y="161" class="tag">No approval</text>
+  </g>
+  <g transform="translate(620 255)">
+    <rect class="card" width="158" height="180" rx="17"/>
+    <text x="24" y="47" class="head">Policy engine</text>
+    <text x="24" y="82" class="body">Eligibility</text>
+    <text x="24" y="108" class="body">Calculations</text>
+    <text x="24" y="134" class="body">Exclusions</text>
+    <text x="24" y="161" class="tag">Approved rules</text>
+  </g>
+  <g transform="translate(868 255)">
+    <rect class="card" width="190" height="180" rx="17"/>
+    <text x="24" y="47" class="head">Loan officer</text>
+    <text x="24" y="82" class="body">Reviews evidence</text>
+    <text x="24" y="108" class="body">Owns decision</text>
+    <text x="24" y="134" class="body">Records reasons</text>
+    <text x="24" y="161" class="tag">Accountable human</text>
+  </g>
+  <path class="line" marker-end="url(#arrow)" d="M963 438v42c0 28-22 46-50 46H860"/>
+  <rect class="card" x="344" y="535" width="512" height="72" rx="16"/>
+  <text x="600" y="565" text-anchor="middle" class="head">Independent audit record</text>
+  <text x="600" y="590" text-anchor="middle" class="body">Evidence, reason codes, versions, reviewer, outcome</text>
+</svg>

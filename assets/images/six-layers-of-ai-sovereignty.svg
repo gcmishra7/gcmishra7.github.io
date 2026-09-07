@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Six layers of enterprise AI sovereignty</title>
+  <desc id="desc">Six hand drawn style cards show data, infrastructure, models, knowledge, decisions and operations around enterprise control.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfcfd}.card{fill:#fff;stroke:#10223b;stroke-width:4;stroke-linejoin:round}.line{stroke:#007f86;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none}.title{font:700 31px Georgia,serif;fill:#10223b}.head{font:800 18px Arial,sans-serif;fill:#10223b}.body{font:600 15px Arial,sans-serif;fill:#4c5f74}.core{fill:#f3fbfb;stroke:#007f86;stroke-width:4}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0l10 5-10 5z" fill="#007f86"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="675"/>
+  <text x="72" y="82" class="title">The six layers of enterprise AI sovereignty</text>
+  <text x="74" y="116" class="body">A system can be strong in one layer and weak in another.</text>
+  <circle class="core" cx="600" cy="348" r="92"/>
+  <text x="600" y="340" text-anchor="middle" class="head">RETAINED</text>
+  <text x="600" y="365" text-anchor="middle" class="head">CONTROL</text>
+  <path class="line" marker-end="url(#arrow)" d="M508 324L360 236"/>
+  <path class="line" marker-end="url(#arrow)" d="M600 256V198"/>
+  <path class="line" marker-end="url(#arrow)" d="M692 324l148-88"/>
+  <path class="line" marker-end="url(#arrow)" d="M508 372l-148 88"/>
+  <path class="line" marker-end="url(#arrow)" d="M600 440v58"/>
+  <path class="line" marker-end="url(#arrow)" d="M692 372l148 88"/>
+  <g transform="translate(85 170)">
+    <rect class="card" width="260" height="110" rx="16"/>
+    <text x="24" y="38" class="head">1. Data</text>
+    <text x="24" y="69" class="body">Location, access, keys</text>
+    <text x="24" y="92" class="body">retention and reuse</text>
+  </g>
+  <g transform="translate(470 110)">
+    <rect class="card" width="260" height="110" rx="16"/>
+    <text x="24" y="38" class="head">2. Infrastructure</text>
+    <text x="24" y="69" class="body">Where workloads run</text>
+    <text x="24" y="92" class="body">and who administers</text>
+  </g>
+  <g transform="translate(855 170)">
+    <rect class="card" width="260" height="110" rx="16"/>
+    <text x="24" y="38" class="head">3. Models</text>
+    <text x="24" y="69" class="body">Selection, versions</text>
+    <text x="24" y="92" class="body">testing and exit</text>
+  </g>
+  <g transform="translate(85 420)">
+    <rect class="card" width="260" height="110" rx="16"/>
+    <text x="24" y="38" class="head">4. Knowledge</text>
+    <text x="24" y="69" class="body">Rules, documents</text>
+    <text x="24" y="92" class="body">benchmarks and experts</text>
+  </g>
+  <g transform="translate(470 505)">
+    <rect class="card" width="260" height="110" rx="16"/>
+    <text x="24" y="38" class="head">5. Decisions</text>
+    <text x="24" y="69" class="body">Authority, review</text>
+    <text x="24" y="92" class="body">evidence and reasons</text>
+  </g>
+  <g transform="translate(855 420)">
+    <rect class="card" width="260" height="110" rx="16"/>
+    <text x="24" y="38" class="head">6. Operations</text>
+    <text x="24" y="69" class="body">Monitoring, recovery</text>
+    <text x="24" y="92" class="body">rollback and shutdown</text>
+  </g>
+</svg>

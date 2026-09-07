@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AI regulation comparison across regions</title>
+  <desc id="desc">Hand drawn style comparison of European Union, United States and Asia Pacific AI regulatory postures with data localisation figures.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfcfd}.box{fill:#fff;stroke:#10223b;stroke-width:4;stroke-linejoin:round}.line{stroke:#007f86;stroke-width:4;stroke-linecap:round;fill:none}.title{font:700 30px Georgia,serif;fill:#10223b}.head{font:800 18px Arial,sans-serif;fill:#10223b}.body{font:600 15px Arial,sans-serif;fill:#4c5f74}.big{font:800 34px Arial,sans-serif;fill:#007f86}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="675"/>
+  <text x="70" y="78" class="title">AI regulation: Asia is different, not simply ahead</text>
+  <text x="72" y="112" class="body">Each region optimises for a different mix of rights, innovation, security and national capacity.</text>
+  <g transform="translate(70 165) rotate(-1 150 190)">
+    <rect class="box" width="315" height="285" rx="18"/>
+    <text x="24" y="44" class="head">European Union</text>
+    <path class="line" d="M24 66h260"/>
+    <text x="24" y="105" class="body">Binding horizontal AI Act</text>
+    <text x="24" y="137" class="body">Risk-based obligations</text>
+    <text x="24" y="169" class="body">Credit scoring is high risk</text>
+    <text x="24" y="223" class="head">Trade-off</text>
+    <text x="24" y="252" class="body">Consistency with compliance load</text>
+  </g>
+  <g transform="translate(443 165) rotate(1 150 190)">
+    <rect class="box" width="315" height="285" rx="18"/>
+    <text x="24" y="44" class="head">United States</text>
+    <path class="line" d="M24 66h260"/>
+    <text x="24" y="105" class="body">No single federal AI law</text>
+    <text x="24" y="137" class="body">Agency and state rules</text>
+    <text x="24" y="169" class="body">Infrastructure led policy</text>
+    <text x="24" y="223" class="head">Trade-off</text>
+    <text x="24" y="252" class="body">Speed with fragmentation</text>
+  </g>
+  <g transform="translate(815 165) rotate(-1 150 190)">
+    <rect class="box" width="315" height="285" rx="18"/>
+    <text x="24" y="44" class="head">Asia Pacific</text>
+    <path class="line" d="M24 66h260"/>
+    <text x="24" y="105" class="body">Korea has a broad AI law</text>
+    <text x="24" y="137" class="body">China uses service rules</text>
+    <text x="24" y="169" class="body">Singapore uses frameworks</text>
+    <text x="24" y="223" class="head">Trade-off</text>
+    <text x="24" y="252" class="body">Local fit with complexity</text>
+  </g>
+  <path class="line" d="M94 520c330 34 656 33 990-2"/>
+  <text x="70" y="570" class="head">Data localisation measures through 2024, Stanford AI Index 2026</text>
+  <text x="70" y="628" class="big">East Asia and Pacific 77</text>
+  <text x="523" y="628" class="big">Europe and Central Asia 66</text>
+  <text x="940" y="628" class="big">North America 3</text>
+</svg>
