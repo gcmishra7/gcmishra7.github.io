@@ -39,9 +39,14 @@
     <text x="24" y="223" class="head">Trade-off</text>
     <text x="24" y="252" class="body">Local fit with complexity</text>
   </g>
-  <path class="line" d="M94 520c330 34 656 33 990-2"/>
-  <text x="70" y="570" class="head">Data localisation measures through 2024, Stanford AI Index 2026</text>
-  <text x="70" y="628" class="big">East Asia and Pacific 77</text>
-  <text x="523" y="628" class="big">Europe and Central Asia 66</text>
-  <text x="940" y="628" class="big">North America 3</text>
+  <text x="70" y="512" class="head">Data localisation measures through 2024 · Stanford AI Index 2026</text>
+  <path class="line" d="M70 530h1060" opacity="0.3"/>
+  <g text-anchor="middle">
+    <text x="227" y="600" class="big">66</text>
+    <text x="227" y="632" class="body">Europe &amp; Central Asia</text>
+    <text x="600" y="600" class="big">3</text>
+    <text x="600" y="632" class="body">North America</text>
+    <text x="972" y="600" class="big">77</text>
+    <text x="972" y="632" class="body">East Asia &amp; Pacific</text>
+  </g>
 </svg>

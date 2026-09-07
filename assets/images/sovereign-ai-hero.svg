@@ -12,7 +12,8 @@
   <rect class="paper" width="1200" height="675"/>
   <path class="ink" d="M72 86c245-18 487-15 720 0 71 5 137 12 202 21"/>
   <text x="76" y="148" class="note">Sovereign AI is not isolation.</text>
-  <text x="76" y="184" class="small">It is retained authority over data, models, decisions and operations.</text>
+  <text x="76" y="182" class="small">It is retained authority over data, models,</text>
+  <text x="76" y="208" class="small">decisions and operations.</text>
   <rect class="fill" x="330" y="250" width="540" height="270" rx="22"/>
   <path class="soft dash" d="M368 286h462v197H368z"/>
   <text x="600" y="332" text-anchor="middle" class="label">ENTERPRISE CONTROL BOUNDARY</text>
