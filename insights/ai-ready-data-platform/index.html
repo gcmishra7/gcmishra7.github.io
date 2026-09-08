@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Is Your Data Platform AI-Ready? Five Stages to Get There</title>
+  <meta name="description" content="A practical, research-backed guide to data platform architecture patterns and the five stages from governed data to agent-ready operations.">
+  <meta name="author" content="Gour Mishra">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gcmishra7.github.io/insights/ai-ready-data-platform/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Is Your Data Platform AI-Ready? Five Stages to Get There">
+  <meta property="og:description" content="Architecture patterns, common gaps and a practical maturity path from governed data to AI agents.">
+  <meta property="og:url" content="https://gcmishra7.github.io/insights/ai-ready-data-platform/">
+  <meta property="og:image" content="https://gcmishra7.github.io/assets/images/ai-ready-pattern-map.svg">
+  <meta property="og:image:alt" content="Black and white map of data platform architecture patterns and AI readiness capabilities">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Is Your Data Platform AI-Ready? Five Stages to Get There">
+  <meta name="twitter:description" content="Architecture patterns, common gaps and a practical maturity path from governed data to AI agents.">
+  <meta name="twitter:image" content="https://gcmishra7.github.io/assets/images/ai-ready-pattern-map.svg">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Is Your Data Platform AI-Ready? Five Stages to Get There",
+    "description": "A practical, research-backed guide to data platform architecture patterns and the five stages from governed data to agent-ready operations.",
+    "author": {"@type": "Person", "name": "Gour Mishra"},
+    "datePublished": "2026-09-08",
+    "dateModified": "2026-09-08",
+    "mainEntityOfPage": "https://gcmishra7.github.io/insights/ai-ready-data-platform/",
+    "image": "https://gcmishra7.github.io/assets/images/ai-ready-pattern-map.svg"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Gour Mishra</a>
+    <nav aria-label="Primary navigation">
+      <a href="/">Insights</a>
+      <a href="https://www.linkedin.com/in/gourmishra">LinkedIn</a>
+      <a href="https://github.com/gcmishra7">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <article class="article-shell">
+      <div class="article-meta">Data architecture · AI readiness · 9 min read</div>
+      <h1>Is Your Data Platform AI-Ready? Five Stages to Get There</h1>
+      <p><em>A practical guide to architecture patterns, current gaps and the capabilities required to move from governed data to production AI.</em></p>
+
+      <h2>Key takeaways</h2>
+      <ul>
+        <li>No architecture label makes a platform AI-ready.</li>
+        <li>Warehouses, lakes and lakehouses describe storage and processing. Mesh describes ownership. Fabric describes integration and metadata.</li>
+        <li>AI readiness must be assessed for a specific workload, not declared for an entire estate.</li>
+        <li>Generative AI adds new data-quality, lineage, retrieval and security requirements.</li>
+        <li>AI agents add one further requirement: control over what the system can do after it reads the data.</li>
+      </ul>
+
+      <blockquote><p><strong>A dashboard expects a table. A model expects reproducible features. A generative AI application expects trusted context. An AI agent may expect permission to act.</strong></p></blockquote>
+
+      <p>Many organisations have modernised their data estate and still struggle to move AI experiments into production. The problem is not always the model. It is often the distance between data that is good enough for reporting and data that is suitable for a particular AI decision.</p>
+
+      <p>That distinction matters. Gartner argues that data cannot be made AI-ready in general or in advance. Its fitness depends on the use case. A forecasting model needs representative history and labels. Retrieval-augmented generation needs current documents, effective chunking and reliable citations. An agent that changes a customer record needs governed tools, identity and action limits.</p>
+
+      <p>The practical question is therefore not, "Do we have an AI-ready platform?" It is, "For this use case, can the platform provide the right information with its meaning, permissions, freshness and provenance intact?"</p>
+
+      <h2>First, separate the architecture patterns</h2>
+      <p>The usual comparison between warehouse, lakehouse, mesh and fabric combines concepts that solve different problems.</p>
+
+      <p><strong>Data warehouses</strong> remain effective for reconciled reporting, dimensional models and stable business metrics. Their weakness is not poor governance. It is that many were designed around structured, retrospective data rather than documents, images, streams and experimental AI access patterns.</p>
+
+      <p><strong>Data lakes</strong> provide flexible and economical storage for diverse data. Without strong metadata, ownership and quality controls, that flexibility can produce a large collection of assets that few people understand or trust.</p>
+
+      <p><strong>Lakehouses</strong> add table management, transactions and governance to object storage, supporting BI, engineering and machine learning on a shared foundation. Open table formats can also improve reproducibility through versioned snapshots. A lakehouse is a strong technical foundation, but it does not automatically supply business semantics, permission-aware retrieval or AI evaluation.</p>
+
+      <p><strong>Data mesh</strong> is primarily an operating model. Its four original principles are domain ownership, data as a product, self-service infrastructure and federated computational governance. It can improve context and accountability, but decentralisation without shared standards can create incompatible products.</p>
+
+      <p><strong>Data fabric</strong> is an integration and metadata pattern spanning distributed systems. It can help organisations discover, connect and govern data without moving everything into one store. Its value depends on active metadata and enforceable policies, not a new catalogue interface.</p>
+
+      <p><strong>Streaming, feature stores, search indexes, vector databases and knowledge graphs</strong> are workload-specific components. They extend the platform. They do not replace its governed foundation.</p>
+
+      <p><img src="/assets/images/ai-ready-pattern-map.svg" alt="Black and white map classifying data platform architecture patterns into storage, operating and AI serving capabilities"></p>
+
+      <h2>Where modern platforms still fall short</h2>
+      <p>Seven gaps appear repeatedly when an analytics platform is asked to support AI.</p>
+
+      <ol>
+        <li><strong>Structured-data bias.</strong> Policies, correspondence, images, audio and conversations sit outside normal data controls.</li>
+        <li><strong>Missing business meaning.</strong> Technical schemas describe fields, but not entities, relationships, policies or acceptable interpretations.</li>
+        <li><strong>Broken permission inheritance.</strong> Access rules on a source document may not carry into extracted text, chunks, embeddings, indexes and caches.</li>
+        <li><strong>Incomplete lineage.</strong> Traditional lineage often stops at a table or report. AI requires provenance through source versions, transformations, retrieval, prompts, models and outputs.</li>
+        <li><strong>Wrong quality measures.</strong> Completeness and validity do not measure chunk quality, retrieval relevance, citation accuracy or grounding.</li>
+        <li><strong>Stale context.</strong> An accurate source can still produce a wrong answer when its index has not processed a correction or deletion.</li>
+        <li><strong>No governed feedback loop.</strong> Human corrections and eventual business outcomes are rarely retained as evaluation data.</li>
+      </ol>
+
+      <p>A 2025 research study based on interviews with 16 practitioners identified 26 data-quality challenges across extraction, transformation, search and generation in RAG systems. The important lesson is that quality problems change as data moves through the pipeline. Testing only the source table is not enough.</p>
+
+      <h2>Five stages of an AI-ready data platform</h2>
+      <p>The following maturity model synthesises recent guidance from Gartner, EY, Microsoft, NIST and current RAG research. It is not a claim that every organisation follows one linear journey. Different domains can sit at different stages.</p>
+
+      <p><img src="/assets/images/ai-ready-five-stages.svg" alt="Five stages of AI-ready data platform maturity from fragmented data to controlled AI agents"></p>
+
+      <h3>Stage 1: Fragmented</h3>
+      <p>Data is spread across warehouses, files, applications and document stores. AI teams assemble each experiment manually and often connect directly to sources. Definitions, owners and permitted uses are unclear. The first task is to choose one business use case, identify its authoritative sources and name accountable owners.</p>
+
+      <h3>Stage 2: Governed</h3>
+      <p>Priority data is catalogued, classified and protected. Quality rules, access policies, retention and source-to-product lineage are operational. Development, testing and production are separated. This creates control, but the platform may still be optimised mainly for reporting.</p>
+
+      <h3>Stage 3: Productised and contextual</h3>
+      <p>Reusable domain data products have contracts, owners, service expectations and stable identifiers. A semantic layer connects physical data with business definitions, metrics and relationships. Data becomes understandable without relying on the few people who know how the source systems work.</p>
+
+      <h3>Stage 4: AI-consumable</h3>
+      <p>The platform supports structured, unstructured and multimodal pipelines. It can serve data through SQL, reusable features, keyword search, vector retrieval or graphs according to the workload. Source permissions propagate into derived assets. Training sets, evaluation sets, prompts and retrieval configurations are versioned. Quality is measured across the full AI application, not only at ingestion.</p>
+
+      <h3>Stage 5: Agent-ready</h3>
+      <p>AI systems have managed identities, approved connectors and tightly scoped tools. Memory, data access and actions are purpose-bound and observable. Material actions require checkpoints, while transaction limits, rollback and shutdown controls constrain failures. Business outcomes and reviewer corrections feed continuous evaluation.</p>
+
+      <h2>The recipes that turn architecture into capability</h2>
+      <p>Moving through the stages requires reusable platform recipes rather than a new stack for every proof of concept.</p>
+
+      <ol>
+        <li><strong>Use-case data contract:</strong> authoritative sources, intended decision, owner, permitted use, freshness and acceptance measures.</li>
+        <li><strong>Semantic contract:</strong> business definitions, canonical entities, identifiers, relationships, metrics and policies.</li>
+        <li><strong>Unstructured-data supply chain:</strong> extraction, OCR, classification, chunking, enrichment, versioning and deletion.</li>
+        <li><strong>Retrieval service:</strong> SQL, keyword, vector and graph options with permission filtering and citations.</li>
+        <li><strong>AI provenance:</strong> trace source records and documents through features, chunks, prompts, model versions and outputs.</li>
+        <li><strong>Evaluation service:</strong> workload-specific tests for accuracy, relevance, groundedness, bias, security, latency and cost.</li>
+        <li><strong>AI control plane:</strong> model gateway, agent identity, tool registry, policy enforcement, telemetry and incident controls.</li>
+        <li><strong>Feedback product:</strong> reviewer decisions, corrections, exceptions and realised outcomes retained under governance.</li>
+      </ol>
+
+      <p>Microsoft's current guidance makes a useful practical point: do not add a separate vector database automatically. First ask whether an existing database, search engine or data platform already provides the required indexing and retrieval. Every additional store creates another copy whose permissions, freshness, lineage and cost must be controlled.</p>
+
+      <h2>Worked example: AI-assisted claims triage</h2>
+      <p>Consider an insurer using AI to prioritise a newly submitted claim. The system needs policy and customer records, claim transactions, photographs, repair estimates, policy wording, fraud indicators and previous assessor decisions.</p>
+
+      <p>A reporting-ready platform can provide the policy and transaction tables. An AI-consumable platform must also classify documents, link each document to the correct claim, retrieve the applicable policy wording, respect customer access restrictions and show the evidence supporting each recommendation.</p>
+
+      <p>The AI may identify missing documents, summarise inconsistencies and recommend priority. It should not autonomously reject a material claim. A claims assessor reviews the recommendation, and the platform records the evidence, model and prompt versions, reviewer decision and eventual outcome.</p>
+
+      <p>This example exposes the difference between adding AI to a data platform and making the platform ready for AI. The second approach builds reusable controls around context, evidence and decisions.</p>
+
+      <h2>Where should an organisation begin?</h2>
+      <ol>
+        <li><strong>Select</strong> one valuable decision or workflow.</li>
+        <li><strong>Assess</strong> its data against the five maturity stages.</li>
+        <li><strong>Identify</strong> the smallest reusable capability gap blocking production.</li>
+        <li><strong>Pilot</strong> business value and controls together.</li>
+        <li><strong>Standardise</strong> successful recipes before expanding to another domain.</li>
+      </ol>
+
+      <blockquote><p><strong>Architecture describes how the platform is assembled. Maturity describes what the organisation can reliably and safely do with it.</strong></p></blockquote>
+
+      <p>An organisation does not need every dataset at Stage 5. It needs each important data product to reach the level required by its intended workload. A monthly management report, a fraud model, a policy assistant and an autonomous service agent should not face the same readiness test.</p>
+
+      <p>The real measure of an AI-ready data platform is not how many AI services it contains. It is whether trusted information can reach an AI system with meaning, permissions, freshness and provenance intact, and whether the resulting action can be evaluated, challenged and stopped.</p>
+
+      <p><strong>Which of the five stages best describes your most important data domain today? Follow for more practical analysis of data and AI architecture in APAC.</strong></p>
+
+      <h2>FAQ</h2>
+      <h3>Does a lakehouse make a data platform AI-ready?</h3>
+      <p>No. A lakehouse provides a strong storage and processing foundation for analytics and ML. AI readiness also requires semantics, unstructured-data pipelines, permission-aware retrieval, end-to-end provenance, evaluation and operational controls appropriate to the use case.</p>
+
+      <h3>Is a vector database required?</h3>
+      <p>No. Vector search is useful for semantic retrieval, but it is one option among SQL, keyword search, hybrid search and graph traversal. Use a separate vector store only when the workload requires it and the additional copy can be governed.</p>
+
+      <h3>Can an enterprise be fully AI-ready?</h3>
+      <p>Not as one permanent state. Readiness differs by domain, data product and workload. It also changes as sources, models, regulations and business decisions change. Assess maturity against a defined use case and update it continuously.</p>
+
+      <h2>Reference documents</h2>
+      <ol>
+        <li><a href="https://www.gartner.com/en/articles/ai-ready-data">Gartner: AI-Ready Data Essentials to Capture AI Value</a></li>
+        <li><a href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/documents/ey-gl-ai-ready-data-architecture-07-2026.pdf">EY: AI-Ready Data Architecture, 2026</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/plan">Microsoft: Plan for AI Adoption</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/agents/adoption-maturity-model/maturity-model-technology">Microsoft: Agentic AI Maturity Model, Technology and Data</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/well-architected/ai/data-platform">Microsoft: Data Platform for AI Workloads</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/ai-ready-data">Snowflake Labs: AI-Ready Data Framework</a></li>
+        <li><a href="https://www.ibm.com/think/topics/ai-ready-data">IBM: What Is AI-Ready Data?</a></li>
+        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf">NIST: Generative AI Risk Management Profile</a></li>
+        <li><a href="https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html">AWS: Generative AI Well-Architected Lens</a></li>
+        <li><a href="https://martinfowler.com/articles/data-mesh-principles.html">Zhamak Dehghani: Data Mesh Principles and Logical Architecture</a></li>
+        <li><a href="https://iceberg.apache.org/spec/">Apache Iceberg Specification</a></li>
+        <li><a href="https://arxiv.org/pdf/2510.00552">Data Quality Challenges in Retrieval-Augmented Generation, ICIS 2025</a></li>
+        <li><a href="https://arxiv.org/abs/2404.16130">Microsoft Research: From Local to Global, a GraphRAG Approach</a></li>
+      </ol>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <span>Independent analysis on enterprise data, AI and governance.</span>
+    <a href="/">All insights</a>
+  </footer>
+</body>
+</html>
