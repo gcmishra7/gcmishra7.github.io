@@ -61,11 +61,11 @@
 
       <p>Many organisations have modernised their data estate and still struggle to move AI experiments into production. The problem is not always the model. It is often the distance between data that is good enough for reporting and data that is suitable for a particular AI decision.</p>
 
-      <p>That distinction matters. Gartner argues that data cannot be made AI-ready in general or in advance. Its fitness depends on the use case.<sup id="cite-1"><a href="#ref-1" aria-label="Reference 1">[1]</a></sup> A forecasting model needs representative history and labels. Retrieval-augmented generation needs current documents, effective chunking and reliable citations. An agent that changes a customer record needs governed tools, identity and action limits.</p>
+      <p>That distinction matters. Gartner argues that data cannot be made AI-ready in general or in advance. Its fitness depends on the use case. <a class="citation" id="cite-1" href="#ref-1" aria-label="Reference 1">[1]</a> A forecasting model needs representative history and labels. Retrieval-augmented generation needs current documents, effective chunking and reliable citations. An agent that changes a customer record needs governed tools, identity and action limits.</p>
 
       <p>The practical question is therefore not, "Do we have an AI-ready platform?" It is, "For this use case, can the platform provide the right information with its meaning, permissions, freshness and provenance intact?"</p>
 
-      <p>This use-case-specific view is also reflected in current AI-ready data frameworks from Snowflake Labs and IBM.<sup id="cite-6"><a href="#ref-6" aria-label="Reference 6">[6]</a></sup><sup id="cite-7"><a href="#ref-7" aria-label="Reference 7">[7]</a></sup></p>
+      <p>This use-case-specific view is also reflected in current AI-ready data frameworks from Snowflake Labs and IBM. <a class="citation" id="cite-6" href="#ref-6" aria-label="Reference 6">[6]</a> <a class="citation" id="cite-7" href="#ref-7" aria-label="Reference 7">[7]</a></p>
 
       <h2>First, separate the architecture patterns</h2>
       <p>The usual comparison between warehouse, lakehouse, mesh and fabric combines concepts that solve different problems.</p>
@@ -74,9 +74,9 @@
 
       <p><strong>Data lakes</strong> provide flexible and economical storage for diverse data. Without strong metadata, ownership and quality controls, that flexibility can produce a large collection of assets that few people understand or trust.</p>
 
-      <p><strong>Lakehouses</strong> add table management, transactions and governance to object storage, supporting BI, engineering and machine learning on a shared foundation. Open table formats can also improve reproducibility through versioned snapshots.<sup id="cite-11"><a href="#ref-11" aria-label="Reference 11">[11]</a></sup> A lakehouse is a strong technical foundation, but it does not automatically supply business semantics, permission-aware retrieval or AI evaluation.</p>
+      <p><strong>Lakehouses</strong> add table management, transactions and governance to object storage, supporting BI, engineering and machine learning on a shared foundation. Open table formats can also improve reproducibility through versioned snapshots. <a class="citation" id="cite-11" href="#ref-11" aria-label="Reference 11">[11]</a> A lakehouse is a strong technical foundation, but it does not automatically supply business semantics, permission-aware retrieval or AI evaluation.</p>
 
-      <p><strong>Data mesh</strong> is primarily an operating model. Its four original principles are domain ownership, data as a product, self-service infrastructure and federated computational governance.<sup id="cite-10"><a href="#ref-10" aria-label="Reference 10">[10]</a></sup> It can improve context and accountability, but decentralisation without shared standards can create incompatible products.</p>
+      <p><strong>Data mesh</strong> is primarily an operating model. Its four original principles are domain ownership, data as a product, self-service infrastructure and federated computational governance. <a class="citation" id="cite-10" href="#ref-10" aria-label="Reference 10">[10]</a> It can improve context and accountability, but decentralisation without shared standards can create incompatible products.</p>
 
       <p><strong>Data fabric</strong> is an integration and metadata pattern spanning distributed systems. It can help organisations discover, connect and govern data without moving everything into one store. Its value depends on active metadata and enforceable policies, not a new catalogue interface.</p>
 
@@ -97,10 +97,10 @@
         <li><strong>No governed feedback loop.</strong> Human corrections and eventual business outcomes are rarely retained as evaluation data.</li>
       </ol>
 
-      <p>A 2025 research study based on interviews with 16 practitioners identified 26 data-quality challenges across extraction, transformation, search and generation in RAG systems.<sup id="cite-12"><a href="#ref-12" aria-label="Reference 12">[12]</a></sup> The important lesson is that quality problems change as data moves through the pipeline. Testing only the source table is not enough.</p>
+      <p>A 2025 research study based on interviews with 16 practitioners identified 26 data-quality challenges across extraction, transformation, search and generation in RAG systems. <a class="citation" id="cite-12" href="#ref-12" aria-label="Reference 12">[12]</a> The important lesson is that quality problems change as data moves through the pipeline. Testing only the source table is not enough.</p>
 
       <h2>Five stages of an AI-ready data platform</h2>
-      <p>The following maturity model synthesises recent guidance from Gartner, EY, Microsoft, NIST and current RAG research.<sup id="cite-2"><a href="#ref-2" aria-label="Reference 2">[2]</a></sup><sup id="cite-3"><a href="#ref-3" aria-label="Reference 3">[3]</a></sup> It is not a claim that every organisation follows one linear journey. Different domains can sit at different stages.</p>
+      <p>The following maturity model synthesises recent guidance from Gartner, EY, Microsoft, NIST and current RAG research. <a class="citation" id="cite-2" href="#ref-2" aria-label="Reference 2">[2]</a> <a class="citation" id="cite-3" href="#ref-3" aria-label="Reference 3">[3]</a> It is not a claim that every organisation follows one linear journey. Different domains can sit at different stages.</p>
 
       <p><img src="/assets/images/ai-ready-five-stages.svg" alt="Five stages of AI-ready data platform maturity from fragmented data to controlled AI agents"></p>
 
@@ -117,7 +117,7 @@
       <p>The platform supports structured, unstructured and multimodal pipelines. It can serve data through SQL, reusable features, keyword search, vector retrieval or graphs according to the workload. Source permissions propagate into derived assets. Training sets, evaluation sets, prompts and retrieval configurations are versioned. Quality is measured across the full AI application, not only at ingestion.</p>
 
       <h3>Stage 5: Agent-ready</h3>
-      <p>AI systems have managed identities, approved connectors and tightly scoped tools. Memory, data access and actions are purpose-bound and observable. Material actions require checkpoints, while transaction limits, rollback and shutdown controls constrain failures. Business outcomes and reviewer corrections feed continuous evaluation.<sup id="cite-4"><a href="#ref-4" aria-label="Reference 4">[4]</a></sup><sup id="cite-8"><a href="#ref-8" aria-label="Reference 8">[8]</a></sup><sup id="cite-9"><a href="#ref-9" aria-label="Reference 9">[9]</a></sup></p>
+      <p>AI systems have managed identities, approved connectors and tightly scoped tools. Memory, data access and actions are purpose-bound and observable. Material actions require checkpoints, while transaction limits, rollback and shutdown controls constrain failures. Business outcomes and reviewer corrections feed continuous evaluation. <a class="citation" id="cite-4" href="#ref-4" aria-label="Reference 4">[4]</a> <a class="citation" id="cite-8" href="#ref-8" aria-label="Reference 8">[8]</a> <a class="citation" id="cite-9" href="#ref-9" aria-label="Reference 9">[9]</a></p>
 
       <h2>The recipes that turn architecture into capability</h2>
       <p>Moving through the stages requires reusable platform recipes rather than a new stack for every proof of concept.</p>
@@ -126,14 +126,14 @@
         <li><strong>Use-case data contract:</strong> authoritative sources, intended decision, owner, permitted use, freshness and acceptance measures.</li>
         <li><strong>Semantic contract:</strong> business definitions, canonical entities, identifiers, relationships, metrics and policies.</li>
         <li><strong>Unstructured-data supply chain:</strong> extraction, OCR, classification, chunking, enrichment, versioning and deletion.</li>
-        <li><strong>Retrieval service:</strong> SQL, keyword, vector and graph options with permission filtering and citations.<sup id="cite-13"><a href="#ref-13" aria-label="Reference 13">[13]</a></sup></li>
+        <li><strong>Retrieval service:</strong> SQL, keyword, vector and graph options with permission filtering and citations. <a class="citation" id="cite-13" href="#ref-13" aria-label="Reference 13">[13]</a></li>
         <li><strong>AI provenance:</strong> trace source records and documents through features, chunks, prompts, model versions and outputs.</li>
         <li><strong>Evaluation service:</strong> workload-specific tests for accuracy, relevance, groundedness, bias, security, latency and cost.</li>
         <li><strong>AI control plane:</strong> model gateway, agent identity, tool registry, policy enforcement, telemetry and incident controls.</li>
         <li><strong>Feedback product:</strong> reviewer decisions, corrections, exceptions and realised outcomes retained under governance.</li>
       </ol>
 
-      <p>Microsoft's current guidance makes a useful practical point: do not add a separate vector database automatically. First ask whether an existing database, search engine or data platform already provides the required indexing and retrieval.<sup id="cite-5"><a href="#ref-5" aria-label="Reference 5">[5]</a></sup> Every additional store creates another copy whose permissions, freshness, lineage and cost must be controlled.</p>
+      <p>Microsoft's current guidance makes a useful practical point: do not add a separate vector database automatically. First ask whether an existing database, search engine or data platform already provides the required indexing and retrieval. <a class="citation" id="cite-5" href="#ref-5" aria-label="Reference 5">[5]</a> Every additional store creates another copy whose permissions, freshness, lineage and cost must be controlled.</p>
 
       <h2>Worked example: AI-assisted claims triage</h2>
       <p>Consider an insurer using AI to prioritise a newly submitted claim. The system needs policy and customer records, claim transactions, photographs, repair estimates, policy wording, fraud indicators and previous assessor decisions.</p>
