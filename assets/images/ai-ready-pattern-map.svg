@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Data platform patterns and AI readiness</title>
+  <desc id="desc">Black and white hand-drawn style map separating storage and processing, ownership and integration, and AI serving capabilities.</desc>
+  <defs>
+    <filter id="rough" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="1" seed="17" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.15" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
+    <rect x="48" y="118" width="342" height="470" rx="10"/>
+    <rect x="429" y="118" width="342" height="470" rx="10"/>
+    <rect x="810" y="118" width="342" height="470" rx="10"/>
+    <rect x="78" y="205" width="282" height="72" rx="7"/>
+    <rect x="78" y="303" width="282" height="72" rx="7"/>
+    <rect x="78" y="401" width="282" height="72" rx="7"/>
+    <rect x="78" y="499" width="282" height="58" rx="7"/>
+    <rect x="459" y="230" width="282" height="92" rx="7"/>
+    <rect x="459" y="366" width="282" height="92" rx="7"/>
+    <rect x="840" y="190" width="282" height="64" rx="7"/>
+    <rect x="840" y="276" width="282" height="64" rx="7"/>
+    <rect x="840" y="362" width="282" height="64" rx="7"/>
+    <rect x="840" y="448" width="282" height="64" rx="7"/>
+  </g>
+  <g fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="600" y="54" font-size="31" font-weight="700">Data platform patterns solve different problems</text>
+    <text x="600" y="86" font-size="17">AI readiness is an additional capability layer, not another architecture label</text>
+    <text x="219" y="158" font-size="22" font-weight="700">Storage and processing</text>
+    <text x="600" y="158" font-size="22" font-weight="700">Ownership and integration</text>
+    <text x="981" y="158" font-size="22" font-weight="700">AI serving capabilities</text>
+    <text x="219" y="236" font-size="20" font-weight="700">Warehouse</text>
+    <text x="219" y="258" font-size="15">reconciled reporting and metrics</text>
+    <text x="219" y="334" font-size="20" font-weight="700">Data lake</text>
+    <text x="219" y="356" font-size="15">flexible storage for diverse data</text>
+    <text x="219" y="432" font-size="20" font-weight="700">Lakehouse</text>
+    <text x="219" y="454" font-size="15">shared BI, engineering and ML</text>
+    <text x="219" y="534" font-size="20" font-weight="700">Streaming</text>
+    <text x="600" y="267" font-size="21" font-weight="700">Data mesh</text>
+    <text x="600" y="291" font-size="15">domain ownership, products,</text>
+    <text x="600" y="311" font-size="15">self-service and federated governance</text>
+    <text x="600" y="403" font-size="21" font-weight="700">Data fabric</text>
+    <text x="600" y="427" font-size="15">metadata, integration, policy</text>
+    <text x="600" y="447" font-size="15">and automation across systems</text>
+    <text x="981" y="230" font-size="19" font-weight="700">Feature store</text>
+    <text x="981" y="316" font-size="19" font-weight="700">Search and vectors</text>
+    <text x="981" y="402" font-size="19" font-weight="700">Knowledge graph</text>
+    <text x="981" y="488" font-size="19" font-weight="700">Agent tools and APIs</text>
+    <text x="600" y="635" font-size="18" font-weight="700">The practical design is usually a governed combination</text>
+  </g>
+</svg>
