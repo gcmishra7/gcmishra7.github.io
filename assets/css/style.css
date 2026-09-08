@@ -196,9 +196,14 @@ main { min-height: calc(100vh - 12rem); }
   .feature-card { transition: none; }
 }
 
-.article-shell sup a {
-  margin-left: 0.12rem;
-  font-size: 0.76em;
+.article-shell a.citation {
+  display: inline-block;
+  margin-left: 0.15rem;
+  color: var(--accent-dark);
+  font-size: 0.9em;
+  font-weight: 760;
+  line-height: 1;
   text-decoration: none;
+  white-space: nowrap;
 }
 .article-shell [id^="ref-"] { scroll-margin-top: 1.5rem; }
