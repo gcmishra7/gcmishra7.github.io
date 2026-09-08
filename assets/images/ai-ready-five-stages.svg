@@ -1,54 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
   <title id="title">Five stages of an AI-ready data platform</title>
-  <desc id="desc">A black and white hand-drawn style maturity model from fragmented data to agent-ready operations.</desc>
+  <desc id="desc">A compact black and white hand-drawn style maturity model from fragmented data to agent-ready operations.</desc>
   <defs>
     <filter id="rough" x="-2%" y="-2%" width="104%" height="104%">
       <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="1" seed="29" result="noise"/>
       <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.05" xChannelSelector="R" yChannelSelector="G"/>
     </filter>
   </defs>
-  <rect width="1200" height="675" fill="#fff"/>
+  <rect width="1200" height="390" fill="#fff"/>
   <g fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
-    <rect x="42" y="184" width="205" height="326" rx="9"/>
-    <rect x="270" y="159" width="205" height="351" rx="9"/>
-    <rect x="498" y="134" width="205" height="376" rx="9"/>
-    <rect x="726" y="109" width="205" height="401" rx="9"/>
-    <rect x="954" y="84" width="205" height="426" rx="9"/>
-    <line x1="42" y1="552" x2="1159" y2="552"/>
-    <circle cx="144" cy="552" r="7" fill="#fff"/>
-    <circle cx="372" cy="552" r="7" fill="#fff"/>
-    <circle cx="600" cy="552" r="7" fill="#fff"/>
-    <circle cx="828" cy="552" r="7" fill="#fff"/>
-    <circle cx="1056" cy="552" r="7" fill="#fff"/>
+    <rect x="32" y="76" width="208" height="220" rx="9"/>
+    <rect x="264" y="76" width="208" height="220" rx="9"/>
+    <rect x="496" y="76" width="208" height="220" rx="9"/>
+    <rect x="728" y="76" width="208" height="220" rx="9"/>
+    <rect x="960" y="76" width="208" height="220" rx="9"/>
+    <line x1="32" y1="328" x2="1168" y2="328"/>
+    <circle cx="136" cy="328" r="7" fill="#fff"/>
+    <circle cx="368" cy="328" r="7" fill="#fff"/>
+    <circle cx="600" cy="328" r="7" fill="#fff"/>
+    <circle cx="832" cy="328" r="7" fill="#fff"/>
+    <circle cx="1064" cy="328" r="7" fill="#fff"/>
   </g>
   <g fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
-    <text x="600" y="48" font-size="31" font-weight="700">Five stages of AI-ready data platform maturity</text>
-    <text x="144" y="222" font-size="17" font-weight="700">STAGE 1</text>
-    <text x="144" y="255" font-size="23" font-weight="700">Fragmented</text>
-    <text x="144" y="302" font-size="15">Siloed sources</text>
-    <text x="144" y="330" font-size="15">Manual preparation</text>
-    <text x="144" y="358" font-size="15">Proofs of concept</text>
-    <text x="372" y="197" font-size="17" font-weight="700">STAGE 2</text>
-    <text x="372" y="230" font-size="23" font-weight="700">Governed</text>
-    <text x="372" y="277" font-size="15">Catalog and quality</text>
-    <text x="372" y="305" font-size="15">Access controls</text>
-    <text x="372" y="333" font-size="15">Core lineage</text>
-    <text x="600" y="172" font-size="17" font-weight="700">STAGE 3</text>
-    <text x="600" y="205" font-size="21" font-weight="700">Productised</text>
-    <text x="600" y="231" font-size="21" font-weight="700">and contextual</text>
-    <text x="600" y="278" font-size="15">Data contracts</text>
-    <text x="600" y="306" font-size="15">Business semantics</text>
-    <text x="600" y="334" font-size="15">Domain ownership</text>
-    <text x="828" y="147" font-size="17" font-weight="700">STAGE 4</text>
-    <text x="828" y="180" font-size="22" font-weight="700">AI-consumable</text>
-    <text x="828" y="227" font-size="15">Features and labels</text>
-    <text x="828" y="255" font-size="15">Documents and retrieval</text>
-    <text x="828" y="283" font-size="15">Evaluation and provenance</text>
-    <text x="1056" y="122" font-size="17" font-weight="700">STAGE 5</text>
-    <text x="1056" y="155" font-size="22" font-weight="700">Agent-ready</text>
-    <text x="1056" y="202" font-size="15">Managed identity</text>
-    <text x="1056" y="230" font-size="15">Scoped tools and actions</text>
-    <text x="1056" y="258" font-size="15">Monitoring and rollback</text>
-    <text x="600" y="605" font-size="17">Assess by domain and use case. Do not reduce the enterprise to one score.</text>
+    <text x="600" y="42" font-size="30" font-weight="700">Five stages of AI-ready data platform maturity</text>
+    <text x="136" y="110" font-size="16" font-weight="700">STAGE 1</text>
+    <text x="136" y="140" font-size="22" font-weight="700">Fragmented</text>
+    <text x="136" y="185" font-size="15">Siloed sources</text>
+    <text x="136" y="211" font-size="15">Manual preparation</text>
+    <text x="136" y="237" font-size="15">Proofs of concept</text>
+    <text x="368" y="110" font-size="16" font-weight="700">STAGE 2</text>
+    <text x="368" y="140" font-size="22" font-weight="700">Governed</text>
+    <text x="368" y="185" font-size="15">Catalog and quality</text>
+    <text x="368" y="211" font-size="15">Access controls</text>
+    <text x="368" y="237" font-size="15">Core lineage</text>
+    <text x="600" y="110" font-size="16" font-weight="700">STAGE 3</text>
+    <text x="600" y="138" font-size="20" font-weight="700">Productised</text>
+    <text x="600" y="162" font-size="20" font-weight="700">and contextual</text>
+    <text x="600" y="201" font-size="15">Data contracts</text>
+    <text x="600" y="227" font-size="15">Business semantics</text>
+    <text x="600" y="253" font-size="15">Domain ownership</text>
+    <text x="832" y="110" font-size="16" font-weight="700">STAGE 4</text>
+    <text x="832" y="140" font-size="21" font-weight="700">AI-consumable</text>
+    <text x="832" y="185" font-size="15">Features and labels</text>
+    <text x="832" y="211" font-size="15">Documents and retrieval</text>
+    <text x="832" y="237" font-size="15">Evaluation and provenance</text>
+    <text x="1064" y="110" font-size="16" font-weight="700">STAGE 5</text>
+    <text x="1064" y="140" font-size="21" font-weight="700">Agent-ready</text>
+    <text x="1064" y="185" font-size="15">Managed identity</text>
+    <text x="1064" y="211" font-size="15">Scoped tools and actions</text>
+    <text x="1064" y="237" font-size="15">Monitoring and rollback</text>
+    <text x="600" y="370" font-size="16">Assess by domain and use case. Do not reduce the enterprise to one score.</text>
   </g>
 </svg>
