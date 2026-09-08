@@ -195,3 +195,10 @@ main { min-height: calc(100vh - 12rem); }
   html { scroll-behavior: auto; }
   .feature-card { transition: none; }
 }
+
+.article-shell sup a {
+  margin-left: 0.12rem;
+  font-size: 0.76em;
+  text-decoration: none;
+}
+.article-shell [id^="ref-"] { scroll-margin-top: 1.5rem; }
