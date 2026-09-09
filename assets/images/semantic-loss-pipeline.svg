@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Business meaning fades as data moves downstream</title>
+  <desc id="desc">A left to right data pipeline of six stages with connectors. The values and structure stay intact, while a meaning-preserved bar under each stage fades from full to nearly empty by the AI stage.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfcfd}.card{fill:#fff;stroke:#10223b;stroke-width:3.5;stroke-linejoin:round}
+      .line{stroke:#007f86;stroke-width:3.5;stroke-linecap:round;fill:none}
+      .title{font:700 31px Georgia,serif;fill:#10223b}.sub{font:400 17px Arial,sans-serif;fill:#4c5f74}
+      .head{font:800 14px Arial,sans-serif;fill:#10223b}.tag{font:800 12px Arial,sans-serif;fill:#007f86;letter-spacing:.09em}
+      .cap{font:600 15px Arial,sans-serif;fill:#10223b}.mut{font:600 13px Arial,sans-serif;fill:#8a97a6}
+      .barout{fill:none;stroke:#c3ccd6;stroke-width:2}.barfill{fill:#007f86}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0l10 5-10 5z" fill="#007f86"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="675"/>
+  <text x="70" y="74" class="title">Business meaning fades as data moves downstream</text>
+  <text x="72" y="108" class="sub">The tables stay clean and the joins keep working. The roles, rules and intent quietly leak out.</text>
+
+  <text x="70" y="182" class="tag">PIPELINE — VALUE AND STRUCTURE INTACT</text>
+  <!-- connectors -->
+  <path class="line" marker-end="url(#arrow)" d="M214 248H241"/>
+  <path class="line" marker-end="url(#arrow)" d="M400 248H427"/>
+  <path class="line" marker-end="url(#arrow)" d="M586 248H613"/>
+  <path class="line" marker-end="url(#arrow)" d="M772 248H799"/>
+  <path class="line" marker-end="url(#arrow)" d="M958 248H985"/>
+  <!-- stage cards -->
+  <g text-anchor="middle">
+    <g><rect class="card" x="60" y="200" width="150" height="96" rx="14"/><text x="135" y="242" class="head">Application</text><text x="135" y="262" class="head">screen</text></g>
+    <g><rect class="card" x="246" y="200" width="150" height="96" rx="14"/><text x="321" y="242" class="head">API /</text><text x="321" y="262" class="head">message</text></g>
+    <g><rect class="card" x="432" y="200" width="150" height="96" rx="14"/><text x="507" y="242" class="head">Operational</text><text x="507" y="262" class="head">database</text></g>
+    <g><rect class="card" x="618" y="200" width="150" height="96" rx="14"/><text x="693" y="242" class="head">Bronze /</text><text x="693" y="262" class="head">Silver</text></g>
+    <g><rect class="card" x="804" y="200" width="150" height="96" rx="14"/><text x="879" y="242" class="head">Facts &amp;</text><text x="879" y="262" class="head">dimensions</text></g>
+    <g><rect class="card" x="990" y="200" width="150" height="96" rx="14"/><text x="1065" y="242" class="head">AI / agent</text><text x="1065" y="262" class="head">context</text></g>
+  </g>
+
+  <text x="70" y="384" class="tag">MEANING PRESERVED</text>
+  <!-- fading meaning bars aligned under each stage -->
+  <g>
+    <rect class="barout" x="60" y="400" width="150" height="22" rx="4"/><rect class="barfill" x="60" y="400" width="150" height="22" rx="4"/>
+    <rect class="barout" x="246" y="400" width="150" height="22" rx="4"/><rect class="barfill" x="246" y="400" width="120" height="22" rx="4"/>
+    <rect class="barout" x="432" y="400" width="150" height="22" rx="4"/><rect class="barfill" x="432" y="400" width="90" height="22" rx="4"/>
+    <rect class="barout" x="618" y="400" width="150" height="22" rx="4"/><rect class="barfill" x="618" y="400" width="60" height="22" rx="4"/>
+    <rect class="barout" x="804" y="400" width="150" height="22" rx="4"/><rect class="barfill" x="804" y="400" width="30" height="22" rx="4"/>
+    <rect class="barout" x="990" y="400" width="150" height="22" rx="4"/><rect class="barfill" x="990" y="400" width="10" height="22" rx="4"/>
+  </g>
+  <text x="60" y="452" class="mut">full</text>
+  <text x="1140" y="452" text-anchor="end" class="mut">nearly lost</text>
+
+  <text x="70" y="524" class="cap">The foreign key still joins. Which party is the borrower, the guarantor or the beneficial owner does not.</text>
+  <text x="70" y="552" class="mut">Every paradigm assumed a human who already knew the meaning. An agent does not.</text>
+</svg>

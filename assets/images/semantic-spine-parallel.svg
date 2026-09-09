@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">A semantic spine engineered in parallel with the pipeline</title>
+  <desc id="desc">A dashed semantic spine band runs across the top, co-evolving with a four-stage pipeline below it, and one executable source generates ontology, SHACL, tests, contracts, lineage and agent context.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfcfd}.card{fill:#fff;stroke:#10223b;stroke-width:3.5;stroke-linejoin:round}
+      .spine{fill:#f3fbfb;stroke:#007f86;stroke-width:3.5;stroke-dasharray:10 8}
+      .chip{fill:#fff;stroke:#007f86;stroke-width:3}
+      .line{stroke:#007f86;stroke-width:3.5;stroke-linecap:round;fill:none}
+      .title{font:700 31px Georgia,serif;fill:#10223b}.sub{font:400 17px Arial,sans-serif;fill:#4c5f74}
+      .head{font:800 16px Arial,sans-serif;fill:#10223b}.chiptxt{font:700 14px Arial,sans-serif;fill:#10223b}
+      .tag{font:800 13px Arial,sans-serif;fill:#007f86;letter-spacing:.06em}.mut{font:600 12px Arial,sans-serif;fill:#8a97a6}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0l10 5-10 5z" fill="#007f86"/>
+    </marker>
+    <marker id="arrowb" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M10 0L0 5l10 5z" fill="#007f86"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="675"/>
+  <text x="70" y="74" class="title">Engineer the meaning in parallel, not as an afterthought</text>
+  <text x="72" y="108" class="sub">One executable, standard-grounded source that co-evolves with the platform and generates the rest.</text>
+
+  <!-- spine band -->
+  <rect class="spine" x="70" y="150" width="1060" height="86" rx="20"/>
+  <text x="600" y="199" text-anchor="middle" class="head">SEMANTIC SPINE — executable, standard-grounded (FIBO · SHACL · PROV)</text>
+
+  <!-- co-evolution connectors (double headed) -->
+  <g>
+    <path class="line" marker-end="url(#arrow)" marker-start="url(#arrowb)" d="M210 240V304"/>
+    <path class="line" marker-end="url(#arrow)" marker-start="url(#arrowb)" d="M470 240V304"/>
+    <path class="line" marker-end="url(#arrow)" marker-start="url(#arrowb)" d="M730 240V304"/>
+    <path class="line" marker-end="url(#arrow)" marker-start="url(#arrowb)" d="M990 240V304"/>
+  </g>
+  <text x="600" y="288" text-anchor="middle" class="mut">co-evolves at every stage</text>
+
+  <!-- pipeline stages -->
+  <g text-anchor="middle">
+    <g><rect class="card" x="110" y="308" width="200" height="86" rx="14"/><text x="210" y="358" class="head">Sources</text></g>
+    <g><rect class="card" x="370" y="308" width="200" height="86" rx="14"/><text x="470" y="358" class="head">Bronze</text></g>
+    <g><rect class="card" x="630" y="308" width="200" height="86" rx="14"/><text x="730" y="358" class="head">Silver</text></g>
+    <g><rect class="card" x="890" y="308" width="200" height="86" rx="14"/><text x="990" y="358" class="head">Data products</text></g>
+  </g>
+  <path class="line" marker-end="url(#arrow)" d="M314 351H366"/>
+  <path class="line" marker-end="url(#arrow)" d="M574 351H626"/>
+  <path class="line" marker-end="url(#arrow)" d="M834 351H886"/>
+
+  <!-- generated artifacts -->
+  <text x="600" y="470" text-anchor="middle" class="tag">GENERATED FROM ONE SOURCE</text>
+  <g text-anchor="middle">
+    <g><rect class="chip" x="70" y="490" width="150" height="58" rx="12"/><text x="145" y="525" class="chiptxt">Ontology</text></g>
+    <g><rect class="chip" x="252" y="490" width="150" height="58" rx="12"/><text x="327" y="525" class="chiptxt">SHACL</text></g>
+    <g><rect class="chip" x="434" y="490" width="150" height="58" rx="12"/><text x="509" y="525" class="chiptxt">Tests</text></g>
+    <g><rect class="chip" x="616" y="490" width="150" height="58" rx="12"/><text x="691" y="525" class="chiptxt">Contracts</text></g>
+    <g><rect class="chip" x="798" y="490" width="150" height="58" rx="12"/><text x="873" y="525" class="chiptxt">Lineage</text></g>
+    <g><rect class="chip" x="980" y="490" width="150" height="58" rx="12"/><text x="1055" y="525" class="chiptxt">Agent context</text></g>
+  </g>
+</svg>
