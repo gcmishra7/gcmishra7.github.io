@@ -1,0 +1,25 @@
+digraph UBO {
+  rankdir=TB; bgcolor="#fbfcfd"; ranksep=1.0; nodesep=0.7; pad=0.3;
+  node [shape=box style="rounded,filled" fillcolor="#ffffff" color="#10223b" penwidth=2.4 fontname="Arial" fontsize=13 fontcolor="#10223b" margin="0.2,0.12"];
+  edge [color="#007f86" penwidth=2.4 arrowsize=0.9 fontname="Arial" fontsize=12 fontcolor="#007f86"];
+  A [label="Person A\ndirect 40% of OpCo" fillcolor="#f3fbfb" color="#007f86"];
+  B [label="Person B\n50% of HoldCo" fillcolor="#f3fbfb" color="#007f86"];
+  C [label="Person C\n30% of HoldCo"];
+  H [label="HoldCo\n60% of OpCo"];
+  O [label="Operating Co\n(the borrower)" penwidth=3];
+  A -> O [label="40%"];
+  B -> H [label="50%"];
+  C -> H [label="30%"];
+  H -> O [label="60%"];
+  { rank=same; A; B; C; }
+  P [shape=box style="rounded" color="#dbe3ec" penwidth=1.5 fontname="Arial" label=<
+    <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="3" CELLPADDING="1">
+      <TR><TD ALIGN="LEFT" COLSPAN="2"><FONT COLOR="#007f86" POINT-SIZE="11"><B>EFFECTIVE CONTROL</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">A &#183; 40%</TD><TD ALIGN="RIGHT"><FONT COLOR="#007f86"><B>beneficial owner</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">B &#183; 50% &#215; 60% = 30%</TD><TD ALIGN="RIGHT"><FONT COLOR="#007f86"><B>beneficial owner</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">C &#183; 30% &#215; 60% = 18%</TD><TD ALIGN="RIGHT"><FONT COLOR="#8a97a6">below 25%</FONT></TD></TR>
+      <TR><TD ALIGN="LEFT" COLSPAN="2"><FONT COLOR="#4c5f74" POINT-SIZE="10">Illustrative threshold: more than 25%; tests vary by jurisdiction and policy</FONT></TD></TR>
+    </TABLE>>];
+  O -> P [style=invis];
+  { rank=same; O; P; }
+}
