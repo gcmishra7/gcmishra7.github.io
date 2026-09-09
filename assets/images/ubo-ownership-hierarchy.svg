@@ -42,10 +42,11 @@
   </g>
 
   <!-- effective-control summary panel -->
-  <rect class="panel" x="60" y="452" width="340" height="158" rx="14"/>
+  <rect class="panel" x="60" y="452" width="340" height="180" rx="14"/>
   <text x="80" y="482" class="ptag">EFFECTIVE CONTROL</text>
   <text x="80" y="516" class="pln">A · 40%</text><text x="380" y="516" text-anchor="end" class="pyes">beneficial owner</text>
   <text x="80" y="548" class="pln">B · 50% × 60% = 30%</text><text x="380" y="548" text-anchor="end" class="pyes">beneficial owner</text>
   <text x="80" y="580" class="pln">C · 30% × 60% = 18%</text><text x="380" y="580" text-anchor="end" class="pno">below 25%</text>
-  <text x="80" y="602" class="body">Multiplies down the chain · UBO = 25%+ (AML)</text>
+  <text x="80" y="600" class="body">Illustrative threshold: more than 25%.</text>
+  <text x="80" y="620" class="body">Tests vary by jurisdiction and policy.</text>
 </svg>
